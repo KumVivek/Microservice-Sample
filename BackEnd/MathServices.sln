@@ -30,6 +30,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{0883B585-48DD-4B23-A55C-4DA866141C79}"
+	ProjectSection(SolutionItems) = preProject
+		..\Images\BE.png = ..\Images\BE.png
+		..\Images\deploy.png = ..\Images\deploy.png
+		..\Images\HLL.png = ..\Images\HLL.png
+		..\Images\infra.png = ..\Images\infra.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +79,7 @@ Global
 		{1581F892-FA17-4020-95AF-2E7ED407C5BD} = {FE7F912D-A370-4518-808C-9960E7FD2070}
 		{88E9B38E-0BE2-4070-B19B-C207D3B3D26E} = {D44BEC33-4761-4F77-899E-DB4E1E1738BD}
 		{DBDC9CF0-0B4B-4BA7-873F-4A90C7FA0A05} = {FE7F912D-A370-4518-808C-9960E7FD2070}
+		{0883B585-48DD-4B23-A55C-4DA866141C79} = {53AA280B-E370-47A1-9D2D-4B81F024AFE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7F28E5D-6AA8-4276-A0BD-E2E73F0554D0}
