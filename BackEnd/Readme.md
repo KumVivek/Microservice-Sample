@@ -1,5 +1,5 @@
 # High Level Diagram
- ![H L L](../HLL.png)
+ ![H L L](HLL.png)
 ## Technology Stack
    ### Tools
 1.	Docker for Window (v2.3.5.1)
