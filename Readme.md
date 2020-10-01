@@ -1,5 +1,5 @@
 # High Level Diagram
- ![H L L](../HLL.png)
+ ![H L L](Images/HLL.png)
 ## Technology Stack
    ### Tools
 1.	Docker for Window (v2.3.5.1)
@@ -53,7 +53,7 @@ At the very top level we will be having the two folders and the docker deploymen
  
 Back-End Project Solution
 The project solution will look like this. 
- ![B E](../BE.png)
+ ![B E](Images/BE.png)
 #### Front-End Project Solution
 The front-end react application will look like this.
  
@@ -70,7 +70,7 @@ Prerequisite service
             
             docker-compose -f infra.yml up --build
 4.	After the above command console should show this.
- ![Infra](../infra.png)
+ ![Infra](Images/infra.png)
 
 So, now the infra services are running. I have kept these service publicly accessible, Just to see the message and service registration.
 
@@ -82,7 +82,7 @@ This is quite a time taking process, on my machine it usually takes 40-45 min. W
  
 As soon as the api starts, it gets register itself to the consul. And this can view by accessing this link http://localhost:8500/ui/dc1/services. 
 After this, your docker network will look like this.
- ![Deploy](../deploy.png)
+ ![Deploy](Images/deploy.png)
 Here you can see the only apigateway, consul, rabbitmq are publicaly exposed. And rest like math.persistance.api and math.operation.api are private. 
 
 So, to make the communication between the among of the container. We have used their service name. This is defined in the respective yml file.
