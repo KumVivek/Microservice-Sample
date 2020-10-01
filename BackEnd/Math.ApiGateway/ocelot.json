@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Math/add",
+      "DownstreamScheme": "http",
+      "ServiceName": "operation",
+      "UpstreamPathTemplate": "/Math/add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Files/GetFileContent",
+      "DownstreamScheme": "http",
+      "ServiceName": "persistance",
+      "UpstreamPathTemplate": "/Files/GetFileContent",
+      "UpstreamHttpMethod": [ "Get" ],
+      "LoadBalancerOptions": { "Type": "RoundRobin" }
+    }
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "consul",
+      "Port": 8500,
+      "Type": "Consul"
+    }
+  }
+}

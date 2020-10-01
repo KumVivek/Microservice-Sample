@@ -1,0 +1,1 @@
+[{"EventTime":"2020-09-22T20:47:49.5033566Z","Number1":2.0,"Number2":3.0,"Result":5.0},{"EventTime":"2020-09-22T20:48:02.8001361Z","Number1":2.0,"Number2":3.0,"Result":5.0},{"EventTime":"2020-09-22T20:48:18.1043926Z","Number1":2.0,"Number2":3.0,"Result":5.0},{"EventTime":"2020-09-22T20:48:36.5924357Z","Number1":2.0,"Number2":3.0,"Result":5.0}]

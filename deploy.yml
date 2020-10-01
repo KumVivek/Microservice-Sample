@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  operation:
+    image: math.operation.api:latest
+    build:
+      context: .
+      dockerfile: BackEnd/Math.Operation.Api/Dockerfile
+    container_name: math.operation.api
+    ports:
+      - "80"
+    hostname: operation
+    
+  persistance:
+    image: math.persistance.api:latest
+    build:
+      context: .
+      dockerfile: BackEnd/Math.Persistance.Api/Dockerfile
+    container_name: math.persistance.api
+    ports:
+      - "80"
+    hostname: persistance
+    
+  apigateway:
+    image: math.apigateway:latest
+    build:
+      context: .
+      dockerfile: BackEnd/Math.ApiGateway/Dockerfile
+    container_name: math.apigateway
+    ports:
+      - "80:80"
+    hostname: apigateway
